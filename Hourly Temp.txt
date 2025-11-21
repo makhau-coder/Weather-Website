@@ -1,0 +1,297 @@
+<section id="temperature_hourly" class="middle_items">
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+
+    <div class="hourly_temp_cards">
+        <div class="temp">28°C</div>
+        <div class="icon">
+            <img src="images/sun.png" alt="sun" />
+        </div>
+        <div class="time">3 PM</div>
+    </div>
+    <div id="lines"></div>
+</section>
+
+
+
+------------------------------------------------------------------------------------------
+
+CSS
+
+
+/*#temperature_hourly {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    gap: 5px;
+    scroll-behavior: smooth;
+    padding-left: 10px;
+}
+
+#temperature_hourly::-webkit-scrollbar {
+    height: 6px;
+     horizontal scrollbar thickness 
+}
+
+#temperature_hourly::-webkit-scrollbar-track {
+    background: rgb(76, 76, 76);
+     scrollbar track 
+}
+
+#temperature_hourly::-webkit-scrollbar-thumb {
+    background-color: rgb(150, 170, 189);
+     scrollbar thumb 
+    border-radius: 4px;
+}
+
+#temperature_hourly::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(50, 60, 80);
+     optional: thumb on hover 
+}
+
+
+.hourly_temp_cards {
+    flex: 0 0 auto;
+    width: 70px;
+    height: 100%;
+    background-color: rgb(30, 40, 60);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+.hourly_temp_cards .temp {
+    font-size: 18px;
+    padding-top: 5px;
+    margin-bottom: 25px;
+    color: whitesmoke;
+}
+
+.hourly_temp_cards .icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.hourly_temp_cards .time {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+#lines {
+    height: 80%;
+    width: 1px;
+    background-color: rgb(173, 173, 173);
+}*/

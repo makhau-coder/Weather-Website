@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="main_section">
+        <section id="left">
+            <div id="navigation_panel" class="color_change">
+                <div id="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <nav id="navigation">
+                    <div class="nav_buttons" id="">
+                        <img src="images/weather.png" alt="">
+                        <p>Weather</p>
+                    </div>
+                    <div class="nav_buttons" id="">
+                        <a id="map_open" target="_blank" href="">
+                            <img src="images/map.png" alt="">
+                        </a>
+                        <p>Maps</p>
+                    </div>
+                    <div class="nav_buttons" id="">
+                        <img src="images/contact.png" alt="">
+                        <p>Contact</p>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section id="middle">
+            <section id="city_search" class="middle_items">
+                <input type="text" id="city_input" placeholder="Search cities...">
+                <button onclick=get_city_name_click()" id="search_icon">
+                    <img src="images/search.png" alt="">
+                </button>
+            </section>
+            <section id="main_area" class="middle_items">
+                <div id="main_content">
+                    <div id="city">
+                        <h1 id="city_data"></h1>
+                        <p id="min_max"></p>
+                    </div>
+                    <div id="temperature">
+                        <h1 id="temp_data"></h1>
+                    </div>
+                </div>
+                <div id="sun">
+                    <img src="images/cloudy.gif" alt="" srcset="">
+                </div>
+            </section>
+            <section id="sun_moon" class="middle_items color_change">
+                <div id="moon">
+                    <img id="moon_image" src="" alt="" srcset="">
+                    <p>Today's Moon</p>
+                </div>
+                <div id="sun_animation">
+                    <img id="city_background" src="images/City_background.png" alt="">
+                    <img id="sun_for_animation" src="images/sun.png" alt="">
+                </div>                
+            </section>
+            <section id="air_conditions" class="middle_items color_change">
+                <div class="air" id="feels_like">
+                    <div class="air_condition_head">
+                        <img src="images/thermometer.png" alt="">
+                        <p>Feels like</p>
+                    </div>
+                    <p class="air_data" id="feels_like_data"></p>
+                </div>
+                <div class="air" id="wind_speed">
+                    <div class="air_condition_head">
+                        <img src="images/wind.png" alt="">
+                        <p>Wind</p>
+                    </div>
+                    <p class="air_data" id="wind_speed_data"></p>
+                </div>
+                <div class="air" id="humidity">
+                    <div class="air_condition_head">
+                        <img src="images/sun_icon.png" alt="">
+                        <p>Humidity</p>
+                    </div>
+                    <p class="air_data" id="humidity_data"></p>
+                </div>
+                <div class="air" id="visibility">
+                    <div class="air_condition_head">
+                        <img src="images/time.png" alt="">
+                        <p>visibility</p>
+                    </div>
+                    <p class="air_data" id="visibility_data"></p>
+                </div>
+            </section>
+        </section>
+        <section id="right">
+            <div id="seven_days_forcast" class="color_change">
+                <h2 class="forecast_title">7 Days Forecast</h2>
+
+                <div class="forecast_row">
+                    <div class="day">Monday</div>
+                    <img class="icon" src="images/sun.png" alt="sun">
+                    <div class="description">Sunny</div>
+                    <div class="temperature">35°C / 27°C</div>
+                </div>
+                <div class="forecast_row">
+                    <div class="day">Tuesday</div>
+                    <img class="icon" src="images/sun.png" alt="sun">
+                    <div class="description">Sunny</div>
+                    <div class="temperature">36°C / 28°C</div>
+                </div>
+                <div class="forecast_row">
+                    <div class="day">Wednesday</div>
+                    <img class="icon" src="images/sun.png" alt="sun">
+                    <div class="description">Sunny</div>
+                    <div class="temperature">34°C / 26°C</div>
+                </div>
+                <div class="forecast_row">
+                    <div class="day">Thursday</div>
+                    <img class="icon" src="images/sun.png" alt="sun">
+                    <div class="description">Sunny</div>
+                    <div class="temperature">37°C / 29°C</div>
+                </div>
+                <div class="forecast_row">
+                    <div class="day">Friday</div>
+                    <img class="icon" src="images/sun.png" alt="sun">
+                    <div class="description">Sunny</div>
+                    <div class="temperature">36°C / 28°C</div>
+                </div>
+                <div class="forecast_row">
+                    <div class="day">Saturday</div>
+                    <img class="icon" src="images/sun.png" alt="sun">
+                    <div class="description">Sunny</div>
+                    <div class="temperature">35°C / 27°C</div>
+                </div>
+                <div class="forecast_row">
+                    <div class="day">Sunday</div>
+                    <img class="icon" src="images/sun.png" alt="sun">
+                    <div class="description">Sunny</div>
+                    <div class="temperature">34°C / 26°C</div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
