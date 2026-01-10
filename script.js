@@ -2,37 +2,6 @@ const apiKey = `9dfcdc7c5b8c1df68d4c5dc87a917e6d`;
 
 console.log("Weather Website Loaded");
 
-const get_city_name = () => {
-    let input = document.getElementById("city_input");
-    const searchBtn = document.getElementById("search_icon");
-
-    function handleSearch() {
-        const city = input.value.trim();
-        if (city === "") return;
-        console.log("City:", city);
-        call_functions(city);
-    }
-
-    input.addEventListener("keydown", function (event) {
-        if (event.key === "Enter") {
-            handleSearch();
-        }
-    });
-    searchBtn.addEventListener("click", function () {
-        handleSearch();
-    });
-};
-
-
-
-/*const get_city_name_click = () => {
-    let input = document.getElementById("city_input");
-    const city = input.value;
-    console.log("City:", city);
-    call_functions(city);           
-};*/
-
-get_city_name();
 
 const weather_data = async (city) => {
     const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9dfcdc7c5b8c1df68d4c5dc87a917e6d`;
@@ -303,23 +272,62 @@ const change_color = async (city) => {
     }
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    const hide_loader = () => {
+        const loader = document.getElementById("loader");
+        if (loader) {
+            loader.style.display = "none"; // force hide
+            console.log("Loader hidden");
+        }
+    };
 
-const call_functions = async (city) => {
-    await Temperature_data(city);
-    await City_data(city);
-    await Min_max_data(city);
-    await Feels_like_data(city);
-    await Wind_speed_data(city);
-    await Visibility_data(city);
-    await Humidity_data(city);
-    await get_map(city);
-    await moon_image();
-    await sun_animation(city);
-    await change_color(city);
-}
+    const call_functions = async (city) => {
+        try {
+            await Temperature_data(city);
+            await City_data(city);
+            await Min_max_data(city);
+            await Feels_like_data(city);
+            await Wind_speed_data(city);
+            await Visibility_data(city);
+            await Humidity_data(city);
+            await get_map(city);
+            await moon_image();
+            await sun_animation(city);
+            await change_color(city);
+        } catch (err) {
+            console.error(err);
+            alert("Failed to load weather data.");
+        } finally {
+            hide_loader(); // always hide
+        }
+    };
 
-let event = window.onload = () => {
-    let city = "basti";
-    console.log("Default city:", city);
-    call_functions(city);
-}
+    const get_city_name = () => {
+        let input = document.getElementById("city_input");
+        const searchBtn = document.getElementById("search_icon");
+
+        function handleSearch() {
+            const city = input.value.trim();
+            if (city === "") return;
+            console.log("City:", city);
+            call_functions(city);
+        }
+
+        input.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                handleSearch();
+            }
+        });
+        searchBtn.addEventListener("click", function () {
+            handleSearch();
+        });
+    };
+
+
+
+    const default_city = "Gorakhpur";
+    call_functions(default_city);
+
+    // Your search functionality
+    get_city_name();
+});
