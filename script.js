@@ -1,18 +1,25 @@
 const apiKey = `9dfcdc7c5b8c1df68d4c5dc87a917e6d`;
 
-
 console.log("Weather Website Loaded");
 
 const get_city_name = () => {
     let input = document.getElementById("city_input");
+    const searchBtn = document.getElementById("search_icon");
+
+    function handleSearch() {
+        const city = input.value.trim();
+        if (city === "") return;
+        console.log("City:", city);
+        call_functions(city);
+    }
 
     input.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
-            console.log("Enter key pressed");
-            const city = input.value;
-            console.log("City:", city);
-            call_functions(city);
+            handleSearch();
         }
+    });
+    searchBtn.addEventListener("click", function () {
+        handleSearch();
     });
 };
 

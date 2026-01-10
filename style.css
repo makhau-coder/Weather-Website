@@ -135,7 +135,13 @@ body {
 }
 
 #city_search input::placeholder {
+    border: none;
     color: rgb(225, 225, 225);
+}
+
+#city_search input:focus {
+    outline: none;
+    border: none;
 }
 
 #search_icon {
