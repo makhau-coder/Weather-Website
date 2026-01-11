@@ -141,6 +141,8 @@ const change_color = async (city) => {
     let mid_panel1 = document.getElementById("sun_moon");
     let mid_panel2 = document.getElementById("air_conditions");
     let right_panel = document.getElementById("seven_days_forcast");
+    let search_box = document.getElementById("city_input");
+    let search_icon = document.getElementById("search_icon");
     let bg = document.getElementById("main_section");
 
     let data = await weather_data(city);
@@ -156,96 +158,118 @@ const change_color = async (city) => {
         mid_panel1.style.backgroundColor = panel_color1;
         mid_panel2.style.backgroundColor = panel_color1;
         right_panel.style.backgroundColor = panel_color1;
+        search_box.style.backgroundColor = panel_color1;
+        search_icon.style.backgroundColor = panel_color1;
         bg.style.backgroundColor = bg_color1;
     }
-
+    
     else if (Difference > 0 && Difference < 750) {
         left_panel.style.backgroundColor = panel_color2;
         mid_panel0.style.backgroundColor = bg_color2;
         mid_panel1.style.backgroundColor = panel_color2;
         mid_panel2.style.backgroundColor = panel_color2;
         right_panel.style.backgroundColor = panel_color2;
+        search_box.style.backgroundColor = panel_color2;
+        search_icon.style.backgroundColor = panel_color2;
         bg.style.backgroundColor = bg_color2;
     }
-
+    
     else if (Difference >= 750 && Difference < 1500) {
         left_panel.style.backgroundColor = panel_color3;
         mid_panel0.style.backgroundColor = bg_color3;
         mid_panel1.style.backgroundColor = panel_color3;
         mid_panel2.style.backgroundColor = panel_color3;
         right_panel.style.backgroundColor = panel_color3;
+        search_box.style.backgroundColor = panel_color3;
+        search_icon.style.backgroundColor = panel_color3;
         bg.style.backgroundColor = bg_color3;
     }
-
+    
     else if (Difference >= 1500 && Difference < 2250) {
         left_panel.style.backgroundColor = panel_color4;
         mid_panel0.style.backgroundColor = bg_color4;
         mid_panel1.style.backgroundColor = panel_color4;
         mid_panel2.style.backgroundColor = panel_color4;
         right_panel.style.backgroundColor = panel_color4;
+        search_box.style.backgroundColor = panel_color4;
+        search_icon.style.backgroundColor = panel_color4;
         bg.style.backgroundColor = bg_color4;
     }
-
+    
     else if (Difference >= 2250 && Difference < 3000) {
         left_panel.style.backgroundColor = panel_color5;
         mid_panel0.style.backgroundColor = bg_color5;
         mid_panel1.style.backgroundColor = panel_color5;
         mid_panel2.style.backgroundColor = panel_color5;
         right_panel.style.backgroundColor = panel_color5;
+        search_box.style.backgroundColor = panel_color5;
+        search_icon.style.backgroundColor = panel_color5;
         bg.style.backgroundColor = bg_color5;
     }
-
+    
     else if (Difference >= 3000 && Difference < 3750) {
         left_panel.style.backgroundColor = panel_color6;
         mid_panel0.style.backgroundColor = bg_color6;
         mid_panel1.style.backgroundColor = panel_color6;
         mid_panel2.style.backgroundColor = panel_color6;
         right_panel.style.backgroundColor = panel_color6;
+        search_box.style.backgroundColor = panel_color6;
+        search_icon.style.backgroundColor = panel_color6;
         bg.style.backgroundColor = bg_color6;
     }
-
+    
     else if (Difference >= sun_set - sun_rise - 3750 && Difference < sun_set - sun_rise - 3000) {
         left_panel.style.backgroundColor = panel_color6;
         mid_panel0.style.backgroundColor = bg_color6;
         mid_panel1.style.backgroundColor = panel_color6;
         mid_panel2.style.backgroundColor = panel_color6;
         right_panel.style.backgroundColor = panel_color6;
+        search_box.style.backgroundColor = panel_color6;
+        search_icon.style.backgroundColor = panel_color6;
         bg.style.backgroundColor = bg_color6;
     }
-
+    
     else if (Difference >= sun_set - sun_rise - 3000 && Difference < sun_set - sun_rise - 2250) {
         left_panel.style.backgroundColor = panel_color5;
         mid_panel0.style.backgroundColor = bg_color5;
         mid_panel1.style.backgroundColor = panel_color5;
         mid_panel2.style.backgroundColor = panel_color5;
         right_panel.style.backgroundColor = panel_color5;
+        search_box.style.backgroundColor = panel_color5;
+        search_icon.style.backgroundColor = panel_color5;
         bg.style.backgroundColor = bg_color5;
     }
-
+    
     else if (Difference >= sun_set - sun_rise - 2250 && Difference < sun_set - sun_rise - 1500) {
         left_panel.style.backgroundColor = panel_color4;
         mid_panel0.style.backgroundColor = bg_color4;
         mid_panel1.style.backgroundColor = panel_color4;
         mid_panel2.style.backgroundColor = panel_color4;
         right_panel.style.backgroundColor = panel_color4;
+        search_box.style.backgroundColor = panel_color4;
+        search_icon.style.backgroundColor = panel_color4;
         bg.style.backgroundColor = bg_color4;
     }
-
+    
     else if (Difference >= sun_set - sun_rise - 1500 && Difference < sun_set - sun_rise - 750) {
         left_panel.style.backgroundColor = panel_color3;
         mid_panel0.style.backgroundColor = bg_color3;
         mid_panel1.style.backgroundColor = panel_color3;
         mid_panel2.style.backgroundColor = panel_color3;
         right_panel.style.backgroundColor = panel_color3;
+        search_box.style.backgroundColor = panel_color3;
+        search_icon.style.backgroundColor = panel_color3;
         bg.style.backgroundColor = bg_color3;
     }
-
+    
     else if (Difference >= sun_set - sun_rise - 750 && Difference < sun_set - sun_rise) {
         left_panel.style.backgroundColor = panel_color2;
         mid_panel0.style.backgroundColor = bg_color2;
         mid_panel1.style.backgroundColor = panel_color2;
         mid_panel2.style.backgroundColor = panel_color2;
         right_panel.style.backgroundColor = panel_color2;
+        search_box.style.backgroundColor = panel_color2;
+        search_icon.style.backgroundColor = panel_color2;
         bg.style.backgroundColor = bg_color2;
     }
     else if (Difference > (sun_set - sun_rise)) {
@@ -254,6 +278,8 @@ const change_color = async (city) => {
         mid_panel1.style.backgroundColor = panel_color1;
         mid_panel2.style.backgroundColor = panel_color1;
         right_panel.style.backgroundColor = panel_color1;
+        search_box.style.backgroundColor = panel_color1;
+        search_icon.style.backgroundColor = panel_color1;
         bg.style.backgroundColor = bg_color1;
     }
     else {
@@ -262,6 +288,8 @@ const change_color = async (city) => {
         mid_panel1.style.backgroundColor = panel_color6;
         mid_panel2.style.backgroundColor = panel_color6;
         right_panel.style.backgroundColor = panel_color6;
+        search_box.style.backgroundColor = panel_color6;
+        search_icon.style.backgroundColor = panel_color6;
         bg.style.backgroundColor = bg_color6;
     }
 }
@@ -287,9 +315,7 @@ document.addEventListener("DOMContentLoaded", () => {
             await get_map(city);
             await moon_image();
             await change_color(city);
-        } catch (err) {
-            alert("Failed to load weather data.");
-        } finally {
+        }finally {
             await hide_loader();
             await sun_animation(city);
         }
@@ -317,7 +343,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    const default_city = "gorakhpur";
+    const default_city = "delhi";
     call_functions(default_city);
 
     // Your search functionality

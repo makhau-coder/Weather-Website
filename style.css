@@ -21,14 +21,12 @@ body {
 
 #main_section {
     background-color: rgb(10, 18, 30);
-    height: 81vh;
-    width: 62vw;
+    height: 590px;
+    width: 940px;
     border-radius: 25px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    overflow-y: auto;
+    justify-content: center;
 }
 
 #left {
@@ -36,7 +34,7 @@ body {
     width: 90px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     border-radius: 25px;
 }
 
@@ -69,7 +67,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-around;
     height: 200px;
     width: 100%;
 }
@@ -123,6 +121,7 @@ body {
 #city_search {
     height: 40px;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
     margin-top: 1.5%;
@@ -147,6 +146,7 @@ body {
 #city_search input:focus {
     outline: none;
     border: none;
+    background-color: rgb(50, 60, 80);
 }
 
 #search_icon {
@@ -164,6 +164,7 @@ body {
 
 #main_area {
     height: 175px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -214,7 +215,7 @@ body {
 
 #sun {
     height: 100%;
-    width: 325px;
+    width: 275px;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -230,13 +231,13 @@ body {
 #sun_moon {
     background-color: rgb(30, 40, 60);
     height: 150px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-#moon {
+.moon {
     height: 150px;
     width: 175px;
     display: flex;
@@ -245,13 +246,13 @@ body {
     justify-content: center;
 }
 
-#moon p {
+.moon p {
     color: whitesmoke;
     font-size: 10px;
     margin-top: 4px;
 }
 
-#moon img {
+.moon img {
     height: 120px;
     width: 120px;
     border-radius: 25px;
@@ -286,14 +287,11 @@ body {
     z-index: 1;
     bottom: -20px;
     left: 10px;
-    /*top: 140px; Final
-    left: 200px; Final
-    */
 }
-
 
 #air_conditions {
     height: 160px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -406,8 +404,8 @@ body {
 
 #loader {
     transition: opacity 0.5s ease;
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: 120%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -419,4 +417,128 @@ body {
 #loader img {
     position: relative;
     height: 20%;
+}
+
+@media((max-width:1000px) and (min-width:745px))
+{
+    #main_section {
+        border-radius:10px;
+    }
+    #sun {
+        padding-right: 40px;
+    }
+    #right{
+        width: 40%;
+    }
+}
+@media((max-width:745px) and (min-width:600px))
+{
+    #main_section {
+        border-radius:10px;
+    }
+    #right{
+        display: none;
+    }
+    #middle {
+        width:85%;
+        margin-right: 10px;
+    }
+}
+
+@media(max-width:600px)
+{
+    #main_section {
+        flex-direction:column-reverse;
+        height: 100%;
+        border-radius: 0;
+        overflow-y: auto;
+        position: relative;
+    }
+    #left {
+        height: 60px;
+        width: 100%;
+        position:fixed;
+        bottom: 0;
+    }
+    #navigation_panel {
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        border-radius: 0;
+    }
+    #logo {
+        border-radius: 0;
+        margin-top: 0;
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    #logo img {
+        width: auto;
+    }
+    #navigation {
+        flex-direction: row;
+        height: 100%;
+        width: 200px;
+    }
+    .nav_buttons{
+        height: 35px;
+        width: 35px;
+    }
+    .nav_buttons img {
+        height: auto;
+    }
+    #middle {
+        width: 95%;
+        justify-content:flex-start;
+        margin-top: 10px;
+    }
+    #main_area{
+        height: 160px;
+    }
+    #sun {
+        padding-right: 20px;
+    }
+    city {
+        width: 100%;
+        height: 100%;
+    }
+    #city p {
+        font-size: 10px;
+    }
+    #temperature h1{
+        font-size: 45px;
+    }
+    #sun_moon {
+        justify-content: start;
+        overflow: hidden;
+    }
+    .moon {
+        display: none;
+    }
+    #sun_animation {
+        width: 100%;
+        mask-image: none;
+    }
+    #city_background {
+        transform: scaleX(-1);
+        width: 100%;
+        height: 100px;
+    }
+    #air_conditions {
+        height: 180px;
+        overflow-y: auto;
+    }
+    .air{
+        width: 40%;
+    }
+    .air_condition_head p {
+        font-size: 15px;
+    }
+    .air_data p {
+        font-size: 20px;
+    }
+    #right {
+        display: none;
+    }
 }
