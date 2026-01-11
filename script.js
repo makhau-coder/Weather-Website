@@ -65,12 +65,13 @@ const get_map = async (city) => {
 
 const moon_image = async () => {
     let moon = document.getElementById("moon_image");
+    let moon2 = document.getElementById("moon_image2");
     let date = new Date();
     const moon_day_01_08_2025 = 5101;
     let moon_day = moon_day_01_08_2025 + 24 * (date.getDate() - 1);
     moon.src = `https://moon.nasa.gov/mvg.2025/${moon_day}.jpg`;
+    moon2.src = `https://moon.nasa.gov/mvg.2025/${moon_day}.jpg`;
 }
-
 
 let currentCoverage = null;
 let animationId = null;
