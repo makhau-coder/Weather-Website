@@ -71,15 +71,15 @@ const moon_image = async () => {
     moon.src = `https://moon.nasa.gov/mvg.2025/${moon_day}.jpg`;
 }
 
+
 let currentCoverage = null;
 let animationId = null;
 
 const sun_animation = async (city) => {
     const data = await weather_data(city);
-
     const sun = document.getElementById("sun_for_animation");
 
-    const sun_rise = data.sys.sunrise; // seconds
+    const sun_rise = data.sys.sunrise;
     const sun_set = data.sys.sunset;
 
     const total_seconds = Math.floor(Date.now() / 1000);
@@ -88,17 +88,45 @@ const sun_animation = async (city) => {
     let targetCoverage = (total_seconds - sun_rise) / sun_time;
     targetCoverage = Math.max(0, Math.min(1, targetCoverage));
 
-    // semicircle geometry (based on your coordinates)
-    const startX = 10;
-    const endX = 220;
-    const baseY = -20;
+    // 🔥 RESPONSIVE VALUES
+    const isMobile = window.matchMedia("(max-width: 400px)").matches;
+    const isSmallTab = window.matchMedia("(max-width: 500px) and (min-width: 400px)").matches;
+    const isBigTab = window.matchMedia("(max-width: 600px) and (min-width: 500px)").matches;
 
-    const cx = (startX + endX) / 2; // 115
+
+    let startX, endX, baseY;
+
+    if (isMobile) {
+        // 📱 Mobile animation
+        startX = 30;
+        endX = 275;
+        baseY = -10;
+    } 
+    else if(isSmallTab)
+    {
+        startX=45;
+        endX=375;
+        baseY=-20;
+    }
+    else if(isBigTab)
+    {
+        startX=100;
+        endX=450;
+        baseY=-20;
+    }
+    else {
+        // 💻 Desktop animation
+        startX = 10;
+        endX = 220;
+        baseY = -20;
+    }
+
+    const cx = (startX + endX) / 2;
     const cy = baseY;
-    const r = (endX - startX) / 2; // 105
+    const r = (endX - startX) / 2;
 
     if (currentCoverage === null) {
-        currentCoverage = 0; // FORCE animation start
+        currentCoverage = 0;
     }
 
     if (animationId) cancelAnimationFrame(animationId);
@@ -120,7 +148,8 @@ const sun_animation = async (city) => {
     }
 
     animateSun();
-}
+};
+
 
 const change_color = async (city) => {
     const panel_color1 = "rgb(30, 40, 60)";
