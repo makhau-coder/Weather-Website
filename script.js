@@ -168,8 +168,9 @@ const change_color = async (city) => {
 
     let left_panel = document.getElementById("navigation_panel");
     let mid_panel0 = document.getElementById("main_area");
-    let mid_panel1 = document.getElementById("sun_moon");
+    let mid_panel1 = document.getElementById("sun_moon1");
     let mid_panel2 = document.getElementById("air_conditions");
+    let mid_panel3 =  document.getElementById("sun_moon2");
     let right_panel = document.getElementById("seven_days_forcast");
     let search_box = document.getElementById("city_input");
     let search_icon = document.getElementById("search_icon");
@@ -187,6 +188,7 @@ const change_color = async (city) => {
         mid_panel0.style.backgroundColor = bg_color1;
         mid_panel1.style.backgroundColor = panel_color1;
         mid_panel2.style.backgroundColor = panel_color1;
+        mid_panel3.style.backgroundColor = panel_color1;
         right_panel.style.backgroundColor = panel_color1;
         search_box.style.backgroundColor = panel_color1;
         search_icon.style.backgroundColor = panel_color1;
@@ -198,6 +200,7 @@ const change_color = async (city) => {
         mid_panel0.style.backgroundColor = bg_color2;
         mid_panel1.style.backgroundColor = panel_color2;
         mid_panel2.style.backgroundColor = panel_color2;
+        mid_panel3.style.backgroundColor = panel_color2;
         right_panel.style.backgroundColor = panel_color2;
         search_box.style.backgroundColor = panel_color2;
         search_icon.style.backgroundColor = panel_color2;
@@ -209,6 +212,7 @@ const change_color = async (city) => {
         mid_panel0.style.backgroundColor = bg_color3;
         mid_panel1.style.backgroundColor = panel_color3;
         mid_panel2.style.backgroundColor = panel_color3;
+        mid_panel3.style.backgroundColor = panel_color3;
         right_panel.style.backgroundColor = panel_color3;
         search_box.style.backgroundColor = panel_color3;
         search_icon.style.backgroundColor = panel_color3;
@@ -220,6 +224,7 @@ const change_color = async (city) => {
         mid_panel0.style.backgroundColor = bg_color4;
         mid_panel1.style.backgroundColor = panel_color4;
         mid_panel2.style.backgroundColor = panel_color4;
+        mid_panel3.style.backgroundColor = panel_color4;
         right_panel.style.backgroundColor = panel_color4;
         search_box.style.backgroundColor = panel_color4;
         search_icon.style.backgroundColor = panel_color4;
@@ -231,6 +236,7 @@ const change_color = async (city) => {
         mid_panel0.style.backgroundColor = bg_color5;
         mid_panel1.style.backgroundColor = panel_color5;
         mid_panel2.style.backgroundColor = panel_color5;
+        mid_panel3.style.backgroundColor = panel_color5;
         right_panel.style.backgroundColor = panel_color5;
         search_box.style.backgroundColor = panel_color5;
         search_icon.style.backgroundColor = panel_color5;
@@ -242,6 +248,7 @@ const change_color = async (city) => {
         mid_panel0.style.backgroundColor = bg_color6;
         mid_panel1.style.backgroundColor = panel_color6;
         mid_panel2.style.backgroundColor = panel_color6;
+        mid_panel3.style.backgroundColor = panel_color6;
         right_panel.style.backgroundColor = panel_color6;
         search_box.style.backgroundColor = panel_color6;
         search_icon.style.backgroundColor = panel_color6;
@@ -253,6 +260,7 @@ const change_color = async (city) => {
         mid_panel0.style.backgroundColor = bg_color6;
         mid_panel1.style.backgroundColor = panel_color6;
         mid_panel2.style.backgroundColor = panel_color6;
+        mid_panel3.style.backgroundColor = panel_color6;
         right_panel.style.backgroundColor = panel_color6;
         search_box.style.backgroundColor = panel_color6;
         search_icon.style.backgroundColor = panel_color6;
@@ -264,6 +272,7 @@ const change_color = async (city) => {
         mid_panel0.style.backgroundColor = bg_color5;
         mid_panel1.style.backgroundColor = panel_color5;
         mid_panel2.style.backgroundColor = panel_color5;
+        mid_panel3.style.backgroundColor = panel_color5;
         right_panel.style.backgroundColor = panel_color5;
         search_box.style.backgroundColor = panel_color5;
         search_icon.style.backgroundColor = panel_color5;
@@ -275,6 +284,7 @@ const change_color = async (city) => {
         mid_panel0.style.backgroundColor = bg_color4;
         mid_panel1.style.backgroundColor = panel_color4;
         mid_panel2.style.backgroundColor = panel_color4;
+        mid_panel3.style.backgroundColor = panel_color4;
         right_panel.style.backgroundColor = panel_color4;
         search_box.style.backgroundColor = panel_color4;
         search_icon.style.backgroundColor = panel_color4;
@@ -286,6 +296,7 @@ const change_color = async (city) => {
         mid_panel0.style.backgroundColor = bg_color3;
         mid_panel1.style.backgroundColor = panel_color3;
         mid_panel2.style.backgroundColor = panel_color3;
+        mid_panel3.style.backgroundColor = panel_color3;
         right_panel.style.backgroundColor = panel_color3;
         search_box.style.backgroundColor = panel_color3;
         search_icon.style.backgroundColor = panel_color3;
@@ -297,6 +308,7 @@ const change_color = async (city) => {
         mid_panel0.style.backgroundColor = bg_color2;
         mid_panel1.style.backgroundColor = panel_color2;
         mid_panel2.style.backgroundColor = panel_color2;
+        mid_panel3.style.backgroundColor = panel_color2;
         right_panel.style.backgroundColor = panel_color2;
         search_box.style.backgroundColor = panel_color2;
         search_icon.style.backgroundColor = panel_color2;
@@ -307,6 +319,7 @@ const change_color = async (city) => {
         mid_panel0.style.backgroundColor = bg_color1;
         mid_panel1.style.backgroundColor = panel_color1;
         mid_panel2.style.backgroundColor = panel_color1;
+        mid_panel3.style.backgroundColor = panel_color1;
         right_panel.style.backgroundColor = panel_color1;
         search_box.style.backgroundColor = panel_color1;
         search_icon.style.backgroundColor = panel_color1;
@@ -317,6 +330,7 @@ const change_color = async (city) => {
         mid_panel0.style.backgroundColor = bg_color6;
         mid_panel1.style.backgroundColor = panel_color6;
         mid_panel2.style.backgroundColor = panel_color6;
+        mid_panel3.style.backgroundColor = panel_color6;
         right_panel.style.backgroundColor = panel_color6;
         search_box.style.backgroundColor = panel_color6;
         search_icon.style.backgroundColor = panel_color6;
