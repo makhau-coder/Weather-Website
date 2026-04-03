@@ -152,6 +152,14 @@ body {
     background-color: rgb(50, 60, 80);
 }
 
+#city_search input:-webkit-autofill,
+#city_search input:-webkit-autofill:hover, 
+#city_search input:-webkit-autofill:focus, 
+#city_search input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: whitesmoke !important;
+}
+
 #search_icon {
     height: 100%;
     width: 40px;

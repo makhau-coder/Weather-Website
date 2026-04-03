@@ -1,8 +1,12 @@
-const apiKey = `9dfcdc7c5b8c1df68d4c5dc87a917e6d`;
+const apiKey = `9dfcdc7c5b8c1df68d4c5dc87a917e6d`; //Free so not hidden
 
-
+// Cache to store weather data per city
+const weather_cache = {};
 
 const weather_data = async (city) => {
+    const key = city.toLowerCase().trim();
+    if (weather_cache[key]) return weather_cache[key];
+
     const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9dfcdc7c5b8c1df68d4c5dc87a917e6d`;
     let response = await fetch(URL);
     let data = await response.json();
@@ -10,6 +14,8 @@ const weather_data = async (city) => {
         alert("City not found! Please enter a valid city name.");
         throw new Error("City not found");
     }
+
+    weather_cache[key] = data;
     return data;
 };
 
@@ -66,12 +72,37 @@ const get_map = async (city) => {
 const moon_image = async () => {
     let moon = document.getElementById("moon_image");
     let moon2 = document.getElementById("moon_image2");
-    let date = new Date();
-    const moon_day_01_08_2025 = 5101;
-    let moon_day = moon_day_01_08_2025 + 24 * (date.getDate() - 1);
-    moon.src = `https://moon.nasa.gov/mvg.2025/${moon_day}.jpg`;
-    moon2.src = `https://moon.nasa.gov/mvg.2025/${moon_day}.jpg`;
-}
+
+    // NASA SVS visualization IDs per year
+    const nasa_ids = {
+        2025: { id: "a005415", folder: "5415" },
+        2026: { id: "a005587", folder: "5587" },
+    };
+
+    const now = new Date();
+    const year = now.getUTCFullYear();
+
+    // Calculate hours elapsed since Jan 1 00:00:00 UTC of current year
+    const start_of_year = Date.UTC(year, 0, 1, 0, 0, 0);
+    const hours_elapsed = Math.floor((Date.now() - start_of_year) / 3600000);
+    const frame = hours_elapsed + 1; // frames start at 1
+
+    // Zero-pad to 4 digits
+    const frame_str = String(frame).padStart(4, "0");
+
+    const nasa = nasa_ids[year];
+
+    let moon_url;
+    if (nasa) {
+        moon_url = `https://svs.gsfc.nasa.gov/vis/a000000/a005500/${nasa.id}/frames/730x730_1x1_30p/moon.${frame_str}.jpg`;
+    } else {
+        // Fallback: old method if year not mapped yet
+        moon_url = `https://moon.nasa.gov/mvg.${year}/${frame_str}.jpg`;
+    }
+
+    moon.src = moon_url;
+    moon2.src = moon_url;
+};
 
 let currentCoverage = null;
 let animationId = null;
@@ -348,6 +379,9 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const call_functions = async (city) => {
+        // Clear cache for this city so a new search always gets fresh data
+        delete weather_cache[city.toLowerCase().trim()];
+
         try {
             await Temperature_data(city);
             await City_data(city);
